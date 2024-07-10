@@ -39,7 +39,7 @@ library(reshape2)
 library(dplyr)
 
 # unzip the zip file to the folder
-## unzip("./data/UCI HAR Dataset.zip", exdir="./data/", unzip="internal")
+unzip("./data/UCI HAR Dataset.zip", exdir="./data/", unzip="internal")
 
 # test and train folder path
 testfolderPath <- "./data/UCI HAR Dataset/test"
