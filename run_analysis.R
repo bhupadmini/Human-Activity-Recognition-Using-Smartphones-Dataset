@@ -37,6 +37,7 @@
 ###########################################################################################################################
 library(reshape2)
 library(dplyr)
+
 # unzip the zip file to the folder
 ## unzip("./data/UCI HAR Dataset.zip", exdir="./data/", unzip="internal")
 
@@ -50,12 +51,12 @@ trainfolderPath <- "./data/UCI HAR Dataset/train"
 features <- read.table("./data/UCI HAR Dataset/features.txt")
 activityLables <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
 
-#train dataset
+# train dataset
 subjectTrainData <- read.table(paste(trainfolderPath,"subject_train.txt",sep="/"))
 XTrainData <- read.table(paste(trainfolderPath,"X_train.txt",sep="/"))
 yTrainData <- read.table( paste(trainfolderPath,"y_train.txt",sep="/"))
 
-#test dataset
+# test dataset
 subjectTestData <- read.table(paste(testfolderPath,"subject_test.txt",sep="/"))
 XTestData <- read.table(paste(testfolderPath,"X_test.txt",sep="/"))
 yTestData <- read.table (paste(testfolderPath,"y_test.txt",sep="/"))
